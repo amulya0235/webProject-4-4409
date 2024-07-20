@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="mainstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="download (1).ico">
+        <style>
+            form {
+                border: 3px solid skyblue;
+                margin-left: 500px;
+                margin-right: 500px;
+                box-shadow:5px 5px 5px #04AA6D, 5px 5px 5px blue; 
+            }
+            form h1{
+                color:skyblue;
+                text-align: center;
+                margin-top: 15px;
+            }
+            form input[type="text"],input[type="password"]{
+                margin: 5px;
+                border-radius: 50px;
+                padding: 5px;
+                box-sizing: border-box;
+                width: 50%;
+                border-top: 0px;
+            }
+            textarea{
+                margin-left: 10px;
+                width: 95%;
+            }
+            body{
+                background-image: url(about.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            b{
+                margin-left: 10px;
+            }
+            button {
+                background-color: skyblue;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body >
+        <header>
+            <nav>
+                <div class="topnav">
+                    <a href="Home.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="Contactus.html">Contact</a>
+                    <a class="active" href="Registration.html">Signin</a>
+                    <a href="Loginpage.html">Login</a>
+                </div>
+        </nav>
+        </header>
+        <br><br>
+        <form>
+        <h1>Registration Page</h1><br>
+        <b style="color: white;">Username:</b><input type="text" placeholder="username"  required><br><br>
+        <b style="color: white;">Password:</b><input type="password" placeholder="password" required><br><br>
+        <b style="color: white;">Date of birth:</b><input type="date"><br><br>
+        <b style="color: white;">Gender:</b><input type="radio" name="gender">Male<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender">Female<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender">Other<br><br>
+        <b style="color: white;">Select area:</b>
+        <input list="Area" name="mymail">
+        <datalist id="email">
+            <option value="ongole"></option>
+            <option value="hyderabad"></option>
+            <option value="banglore"></option>
+        </datalist>
+            <br><br>
+            <b style="color: white;">Languages known:</b><input type="checkbox" name="lang">TELUGU<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="lang">HINDI<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="lang">ENGLISH<br><br>
+            <b style="color: white;">Describe about your place:</b><br><br><textarea rows="5" cols="25">
+            </textarea><br><br>
+            <b style="color: white;">Enter date of visit:</b> <input type="week"><br>
+            <br>
+            <b style="color: white;">Enter your mobile number:</b> <input type="tel" pattern="[0-9]{10}">
+            <br><br><b style="color: white;">Enter your mail id:</b><input type="email"><br><br>
+            <center><button type="submit" value="Submit">Submit</button></center>
+        </form>
+        <br>
+        <br>
+
+    </body>
+</html>

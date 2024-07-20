@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="mainstyle.css">
+        <link rel="icon" type="image/x-icon" href="icon.ico.jfif">
+        <style>
+            body{
+                background-color:lightpink;
+                background-image: url(landing.avif);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            form {
+                border: 3px solid white;
+                margin-left: 500px;
+                margin-right: 500px;
+                margin-top: 50px;
+                box-shadow:5px 5px 5px #04AA6D; 
+            }
+            form h3{
+                color: #04AA6D;
+                text-shadow: 5px 5px 10px palevioletred;
+            }
+            input,text,password {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                border-radius: 50px;
+            }
+            button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                width: 100%;
+            }
+            button:hover {
+                opacity: 0.8;
+            }
+            .container {
+                padding: 16px;
+            }
+             /*smart phone*/
+             @media screen and (min-width:550px)
+            {
+                body{
+                    background-color: aquamarine;
+                }
+            }
+            /*tablet ,ipad*/
+            @media screen and (max-width:1024px)and (min-width:768px) {
+                body{
+                    background-color: azure;
+                }
+            }
+            /*Desktops and Laptops*/
+            @media screen and(min-width:1224px){
+                body{
+                    background-color:palevioletred;
+                }
+            }
+            /*Large screens*/
+            @media screen and(min-width:1824px){
+                body{
+                    background-color: brown;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="topnav">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="Contactus.html">Contact</a>
+                    <a href="Registration.html">Signin</a>
+                    <a class="active"  href="Loginpage.html">Login</a>
+                </div>
+        </nav>
+        </header>
+        <center>
+        <form action="Home.html">
+            <h3><b><u>Login form</u></b></h3>
+            <div class="container">
+                <b style="color: #04AA6D; font-family: cursive;">Username</b>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                <b style="color: #04AA6D;font-family: cursive;">Password</b>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                <button type="submit">Login</button>
+              </div>
+            </center>
+        </form>
+    </body>
+</html>
